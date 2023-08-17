@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="codes/header.css">
+    <link rel="stylesheet" href="codes/form.css">
+</head>
+<body>
+    <!-- header -->
+
+    <header class="MainHeader">
+        <h1 class="MainHeading"> 
+            COVID TRACKER
+        </h1>
+        <nav class="navigator">
+            <ul>
+                <li class="navigations">
+                    <a href="index.html">HOME</a>
+                 </li>
+                <li class="navigations">
+                   <a href="patients_widget.html">PATIENT DETAILS</a>
+                </li>
+                <li class="navigations">
+                    <a href="admin.html"> ADMIN</a>
+                </li>
+                <li class="navigations">
+                    <a href="patients_symptoms.php"> PREDICTION METER</a>
+                </li>
+                <li class="navigations">
+                    <a href="State_analysis.php">STATE ANALYSIS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- form -->
+    <section class="mainbody">
+        <div class="formplace">
+            <div class="pngimage">
+                <img src="codes/149071.png" alt="">
+            </div>
+            <div class="formclass">
+                <form action="newuser_sql.php" method=post>
+                    
+                    <div class="formsection">
+                        <div class="elements">
+                            NAME: <br><input type="text" name="pname" id="">
+                        </div>
+                        <div class="elements">
+                            EMAIL-ID: <br><input type="text" name="pmail" id="">
+                        </div>
+                    </div>
+
+                    <div class="formsection">
+                        <div class="elements">
+                            gender: <br>
+                            <input type="radio" name="gender" value="Male"> MALE &nbsp;
+                             <input type="radio" name="gender" value="Female"> FEMALE
+                        </div>
+                        <div class="elements">
+                            AGE: <br><input type="number" name="page" id="">
+                        </div>
+                    </div>
+                    <h3 style="padding-left:1em; color:blue">ADDRESS</h3>
+                    <div class="formsection">
+                        <div class="elements">
+                            HOUSE NO.: <br><input type="text" name="phouse" id="">
+                        </div>
+                        <div class="elements">
+                            AREA: <br><input type="text" name="parea" id="">
+                        </div>
+                    </div>
+
+                    <div class="formsection">
+                        <div class="elements">
+                            CITY: <br><input type="text" name="pcity" id="">
+                        </div>
+                        <div class="elements">
+                            DISTRICT: <br><input type="text" name="pdistrict" id="">
+                        </div>
+                    </div>
+                    <div class="formsection">
+                        <div class="elements">
+                            STATE: <br><input type="text" name="pstate" id="">
+                        </div>
+                    </div>
+                    <div class="formsection">
+                        <div>
+                            <input type="submit" value="SUBMIT">
+                            <input type="reset" value="RESET">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

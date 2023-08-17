@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="codes/header.css">
+    <link rel="stylesheet" href="codes/form.css">
+</head>
+<body>
+    <!-- header -->
+
+    <header class="MainHeader">
+        <h1 class="MainHeading"> 
+            COVID TRACKER
+        </h1>
+        <nav class="navigator">
+            <ul>
+                <li class="navigations">
+                    <a href="index.html">HOME</a>
+                 </li>
+                <li class="navigations">
+                   <a href="patients_widget.html">PATIENT DETAILS</a>
+                </li>
+                <li class="navigations">
+                    <a href="admin.html"> ADMIN</a>
+                </li>
+                <li class="navigations">
+                    <a href="patients_symptoms.php"> PREDICTION METER</a>
+                </li>
+                <li class="navigations">
+                    <a href="State_analysis.php">STATE ANALYSIS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- form -->
+    <section class="mainbody">
+        <div class="formplace" style="width: 30%;">
+            <div class="formclass" style="border-radius: 1px;">
+                <form action="newsymptom_sql.php" method="post">
+                    <div class="formsection">
+                        <div class="elements">
+                            SYMPTOMS ID: <br><input type="text" name="sreg" id="">
+                        </div>
+                        <div class="elements">
+                            SYMPTOMS_NAME: <br><input type="text" name="sname" id="">
+                        </div>
+                    </div>
+                    <div style="padding-left:5%;">EFFECTED ORGANS</div>
+                    <div class="formsection">
+                        <div class="elements">
+                            ORGAN 1:<br><input type="text" name="sorgan1" id="">
+                        </div>
+                        <div class="elements">
+                            ORGAN 2: <br><input type="text" name="sorgan2" id="">
+                        </div>
+                    </div>
+                    <div class="formsection">
+                        <div class="elements">
+                            Organ 3: <br><input type="text" name="sorgan3" id="">
+                        </div>
+                        <div class="elements">
+                            Organ 4 <br><input type="text" name="sorgan4" id="">
+                        </div>
+                    </div>
+                    <div class="formsection">
+                        <div class="elements">
+                            <input type="submit" value="SUBMIT">
+                            <input type="reset" value="RESET">    
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

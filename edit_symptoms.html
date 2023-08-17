@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="codes/header.css">
+    <link rel="stylesheet" href="codes/form.css">
+</head>
+<body>
+    <!-- header -->
+
+    <header class="MainHeader">
+        <h1 class="MainHeading"> 
+            COVID TRACKER
+        </h1>
+        <nav class="navigator">
+            <ul>
+                <li class="navigations">
+                    <a href="index.html">HOME</a>
+                 </li>
+                <li class="navigations">
+                   <a href="patients_widget.html">PATIENT DETAILS</a>
+                </li>
+                <li class="navigations">
+                    <a href="admin.html"> ADMIN</a>
+                </li>
+                <li class="navigations">
+                    <a href="patients_symptoms.php"> PREDICTION METER </a>
+                </li>
+                <li class="navigations">
+                    <a href="State_analysis.php">STATE ANALYSIS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- form -->
+    <section class="mainbody">
+        <div class="formplace" style="width: 20%;">
+            <div class="formclass">
+                <form action="edit_symptom.php" method="post">
+                    
+                    <div class="formsection">
+                        <div class="elements">
+                            SYMPTOM ID: <br><input type="text" name="id" id="">
+                        </div>
+                    </div>
+
+                    <div class="formsection">
+                        <div class="elements">
+                            SELECT OPTION: <br>
+                            <select name="field" id="">
+                                <option value="symptomps">SYMPTOM</option>
+                                <option value="organ1">ORGAN1</option>
+                                <option value="organ2">ORGAN2</option>
+                                <option value="organ3">ORGAN3</option>
+                                <option value="organ4">ORGAN4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="formsection">
+                        <div class="elements">
+                            ENTER NEW VALUE: <br><input type="text" name="value">
+                        </div>
+                    </div>
+                    <div class="formsection">
+                        <div>
+                            <input type="submit" value="SUBMIT">
+                            <input type="reset" value="RESET">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

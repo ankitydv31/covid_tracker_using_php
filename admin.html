@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="codes/header.css">
+    <link rel="stylesheet" href="codes/form.css">
+</head>
+<body>
+    <!-- header -->
+
+    <header class="MainHeader">
+        <h1 class="MainHeading"> 
+            COVID TRACKER
+        </h1>
+        <nav class="navigator">
+            <ul>
+                <li class="navigations">
+                    <a href="index.html">HOME</a>
+                 </li>
+                <li class="navigations">
+                   <a href="patients_widget.html">PATIENT DETAILS</a>
+                </li>
+                <li class="navigations">
+                   <a href="admin.html"> ADMIN</a>
+                </li>
+                <li class="navigations">
+                    <a href="patients_symptoms.php"> PREDICTION METER</a>
+                </li>
+                <li class="navigations">
+                    <a href="State_analysis.php">STATE ANALYSIS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- form -->
+    <section class="mainbody">
+        <div class="formplace" style="width: 20%;">
+            <div class="pngimage">
+                <img src="codes/149071.png" alt="">
+            </div>
+            <div class="formclass">
+                <form action="admin.php" method="post">
+                    
+                    <div class="formsection">
+                        <div class="elements">
+                            USER ID: <br><input type="text" name="id" id="">
+                        </div>
+                    </div>
+                    <div class="formsection">
+                        <div class="elements">
+                            PASSWORD: <br><input type="text" name="password" id="">
+                        </div>
+                    </div>
+                    <div class="formsection">
+                        <div>
+                            <input type="submit" value="LOG IN">
+                            <input type="reset" value="RESET">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
